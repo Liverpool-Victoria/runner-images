@@ -225,7 +225,8 @@
             "node:18-alpine",
             "node:20-alpine",
             "ubuntu:20.04",
-            "ubuntu:22.04"
+            "ubuntu:22.04",
+            "aztfmod/rover:1.4.6-2305.1807"
         ],
         "components": [
             {
