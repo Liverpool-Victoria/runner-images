@@ -165,7 +165,15 @@ source "azure-arm" "build_image" {
   virtual_network_resource_group_name    = "${var.virtual_network_resource_group_name}"
   virtual_network_subnet_name            = "${var.virtual_network_subnet_name}"
   vm_size                                = "${var.vm_size}"
-  replication_locations                  = ["uksouth"]
+
+  shared_image_gallery_destination {
+    gallery_name        = "azuredevopscafagent"
+    image_name          = "${var.managed_image_name}"
+    image_version       = "${var.image_version}"
+    replication_regions = ["uksouth"]
+    resource_group      = "${var.managed_image_resource_group_name}"
+    subscription        = "${var.subscription_id}"
+  }
 
   dynamic "azure_tag" {
     for_each = var.azure_tags
