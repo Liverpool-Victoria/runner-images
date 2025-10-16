@@ -192,6 +192,7 @@
     ],
     "docker": {
         "images": [
+            "aztfmod/rover:1.4.6-2305.1807"
         ],
         "components": [
             {
