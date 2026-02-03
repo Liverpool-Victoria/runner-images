@@ -90,6 +90,9 @@ build {
       "${path.root}/../scripts/build/install-azure-devops-cli.sh",
       "${path.root}/../scripts/build/install-container-tools.sh",
       "${path.root}/../scripts/build/install-packer.sh",
+      "${path.root}/../scripts/build/install-pypy.sh",
+      "${path.root}/../scripts/build/install-python.sh",
+      "${path.root}/../scripts/build/install-ninja.sh"
     ]
   }
 
